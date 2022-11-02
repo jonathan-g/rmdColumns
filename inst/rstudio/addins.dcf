@@ -1,0 +1,4 @@
+Name: Insert columns
+Description: Inserts Markdown two-column layout at the cursor position.
+Binding: insertColumnsAddin
+Interactive: false

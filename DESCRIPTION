@@ -1,0 +1,18 @@
+Package: rmdColumns
+Type: Package
+Title: Insert columns into an RMarkdown document
+Version: 0.1.0
+Authors@R:
+    person(given = "Jonathan",
+           family = "Gilligan",
+           role = c("aut", "cre"),
+           email = "jonathan.gilligan@vanderbilt.edu",
+           comment = c(ORCID = "0000-0003-1375-6686"))
+Description: Inserts ":::" divs into an RMarkdown document to 
+  provide a set of columns.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+  rstudioapi
+RoxygenNote: 7.2.1

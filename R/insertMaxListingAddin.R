@@ -1,11 +1,8 @@
-#' Insert Rmarkdown divs for a two-column layout
+#' Insert Rmarkdown max-listing div
 #'
-#' Insert Rmarkdown divs for a two-column layout into the current
-#' document. Uses the pandoc `:::` ... `:::` syntax for divs,
-#' with `{.columns}` and `{.column}` tags for column sets and individual
-#' columns.
+#' Insert div with `.maxlisting` class.
 #'
-insertColumnsAddin <- function() {
+insertMaxListingAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']
   col <- rstudioapi::primary_selection(doc)$range$start['column']
@@ -18,18 +15,13 @@ insertColumnsAddin <- function() {
   rstudioapi::insertText(
     location = c(row, 1),
     text = paste(
-      "::::::::: {.columns}",
-      ":::::: {.column}",
-      "",
-      "::::::",
-      ":::::: {.column}",
-      "",
-      "::::::",
-      ":::::::::",
+      "::: {.max-listing}",
+      ":::",
       "",
       sep = "\n"
     ),
     id = doc$id
   )
-  rstudioapi::setCursorPosition(c(row + 2, 1), id = doc$id)
+  rstudioapi::setCursorPosition(c(row + 1, 1), id = doc$id)
 }
+

@@ -1,11 +1,8 @@
-#' Insert Rmarkdown divs for a two-column layout
+#' Insert Rmarkdown column break
 #'
-#' Insert Rmarkdown divs for a two-column layout into the current
-#' document. Uses the pandoc `:::` ... `:::` syntax for divs,
-#' with `{.columns}` and `{.column}` tags for column sets and individual
-#' columns.
+#' Insert Rmarkdown code to end a column div and start another
 #'
-insertColumnsAddin <- function() {
+insertColumnBreakAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']
   col <- rstudioapi::primary_selection(doc)$range$start['column']
@@ -18,14 +15,8 @@ insertColumnsAddin <- function() {
   rstudioapi::insertText(
     location = c(row, 1),
     text = paste(
-      "::::::::: {.columns}",
-      ":::::: {.column}",
-      "",
       "::::::",
       ":::::: {.column}",
-      "",
-      "::::::",
-      ":::::::::",
       "",
       sep = "\n"
     ),
@@ -33,3 +24,4 @@ insertColumnsAddin <- function() {
   )
   rstudioapi::setCursorPosition(c(row + 2, 1), id = doc$id)
 }
+

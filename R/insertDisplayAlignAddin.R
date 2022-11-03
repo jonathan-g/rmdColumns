@@ -1,11 +1,8 @@
-#' Insert Rmarkdown divs for a two-column layout
+#' Insert LaTeX displaymath align block
 #'
-#' Insert Rmarkdown divs for a two-column layout into the current
-#' document. Uses the pandoc `:::` ... `:::` syntax for divs,
-#' with `{.columns}` and `{.column}` tags for column sets and individual
-#' columns.
+#' Insert LaTeX displaymath blosk with an align environment.
 #'
-insertColumnsAddin <- function() {
+insertDisplayAlignAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']
   col <- rstudioapi::primary_selection(doc)$range$start['column']
@@ -18,14 +15,11 @@ insertColumnsAddin <- function() {
   rstudioapi::insertText(
     location = c(row, 1),
     text = paste(
-      "::::::::: {.columns}",
-      ":::::: {.column}",
+      "$$",
+      "\\begin{align}",
       "",
-      "::::::",
-      ":::::: {.column}",
-      "",
-      "::::::",
-      ":::::::::",
+      "\\end{align}",
+      "$$",
       "",
       sep = "\n"
     ),

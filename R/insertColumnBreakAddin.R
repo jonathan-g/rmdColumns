@@ -2,6 +2,8 @@
 #'
 #' Insert Rmarkdown code to end a column div and start another
 #'
+#' @export
+#'
 insertColumnBreakAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']

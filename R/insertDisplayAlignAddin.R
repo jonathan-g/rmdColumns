@@ -2,6 +2,8 @@
 #'
 #' Insert LaTeX displaymath blosk with an align environment.
 #'
+#' @export
+#'
 insertDisplayAlignAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']

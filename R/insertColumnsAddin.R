@@ -5,6 +5,8 @@
 #' with `{.columns}` and `{.column}` tags for column sets and individual
 #' columns.
 #'
+#' @export
+#'
 insertColumnsAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']

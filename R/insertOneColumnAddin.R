@@ -3,6 +3,8 @@
 #' Insert Rmarkdown div for a single column into a multi-column layout.
 #' Uses the pandoc `:::` ... `:::` syntax for divs, with a `{.column}` tag.
 #'
+#' @export
+#'
 insertOneColumnAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']

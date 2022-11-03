@@ -2,6 +2,8 @@
 #'
 #' Insert div with `.maxlisting` class.
 #'
+#' @export
+#'
 insertMaxListingAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']

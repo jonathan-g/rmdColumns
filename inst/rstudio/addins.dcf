@@ -7,3 +7,19 @@ Name: Insert one column
 Description: Inserts one Markdown column at the cursor position.
 Binding: insertOneColumnAddin
 Interactive: false
+
+Name: Insert column break
+Description: End a column and start another.
+Binding: insertColumnBreakAddin
+Interactive: false
+
+Name: Insert max-listing div
+Description: Inserts Markdown div with max-listing class.
+Binding: insertMaxListingAddin
+Interactive: false
+
+Name: Insert math align block
+Description: Inserts LaTeX displaymath block with an align environment.
+Binding: insertDisplayAlignAddin
+Interactive: false
+

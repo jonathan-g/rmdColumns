@@ -15,13 +15,15 @@ insertMaxListingAddin <- function() {
   rstudioapi::insertText(
     location = c(row, 1),
     text = paste(
+      "",
       "::: {.max-listing}",
+      "",
       ":::",
       "",
       sep = "\n"
     ),
     id = doc$id
   )
-  rstudioapi::setCursorPosition(c(row + 1, 1), id = doc$id)
+  rstudioapi::setCursorPosition(c(row + 2, 1), id = doc$id)
 }
 

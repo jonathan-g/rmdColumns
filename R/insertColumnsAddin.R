@@ -18,6 +18,7 @@ insertColumnsAddin <- function() {
   rstudioapi::insertText(
     location = c(row, 1),
     text = paste(
+      "",
       "::::::::: {.columns}",
       ":::::: {.column}",
       "",
@@ -31,5 +32,5 @@ insertColumnsAddin <- function() {
     ),
     id = doc$id
   )
-  rstudioapi::setCursorPosition(c(row + 2, 1), id = doc$id)
+  rstudioapi::setCursorPosition(c(row + 3, 1), id = doc$id)
 }

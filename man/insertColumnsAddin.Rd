@@ -8,7 +8,8 @@ insertColumnsAddin()
 }
 \description{
 Insert Rmarkdown divs for a two-column layout into the current
-document. Uses the pandoc `:::` ... `:::` syntax for divs,
-with `{.columns}` and `{.column}` tags for column sets and individual
+document. Uses the pandoc \code{:::} ... \code{:::} syntax for divs,
+with \code{{.columns}} and \code{{.column}}
+tags for column sets and individual
 columns.
 }

@@ -1,7 +1,8 @@
 #' Insert Rmarkdown div for an extra column
 #'
 #' Insert Rmarkdown div for a single column into a multi-column layout.
-#' Uses the pandoc `:::` ... `:::` syntax for divs, with a `{.column}` tag.
+#' Uses the pandoc `:::` ... `:::` syntax for divs, with a
+#' \code{{.column}} tag.
 #'
 #' @export
 #'

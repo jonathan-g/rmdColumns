@@ -8,5 +8,6 @@ insertOneColumnAddin()
 }
 \description{
 Insert Rmarkdown div for a single column into a multi-column layout.
-Uses the pandoc `:::` ... `:::` syntax for divs, with a `{.column}` tag.
+Uses the pandoc \code{:::} ... \code{:::} syntax for divs, with a
+\code{{.column}} tag.
 }

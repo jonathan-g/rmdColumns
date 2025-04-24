@@ -2,8 +2,22 @@
 % Please edit documentation in R/rmdColumns.R
 \docType{package}
 \name{rmdColumns}
+\alias{rmdColumns-package}
 \alias{rmdColumns}
 \title{rmdColumns Addin}
 \description{
 RStudio addin to insert two-column layout into RMarkdown documents.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/jonathan-g/rmdColumns}
+  \item Report bugs at \url{https://github.com/jonathan-g/rmdColumns/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Jonathan Gilligan \email{jonathan.gilligan@vanderbilt.edu} (\href{https://orcid.org/0000-0003-1375-6686}{ORCID})
+
+}
+\keyword{internal}

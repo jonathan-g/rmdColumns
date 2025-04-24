@@ -7,5 +7,5 @@
 insertMaxListingAddin()
 }
 \description{
-Insert div with `.maxlisting` class.
+Insert div with \code{.maxlisting} class.
 }
